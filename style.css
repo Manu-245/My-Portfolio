@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*All buttons for consistency*/
+button{
+    padding:8px;
+        background-color:transparent;
+        border:none;
+        box-shadow: 1px 1px 5px 2px  rgb(153, 69, 4) inset;
+        border-radius: 15px;
+        color: #a3a2a2;
+        font-weight: bold;
+        margin: 4px 8px;
+}
+                    /* toggle button styles*/
+.switch{
+    position: absolute;
+    right: 20px;
+    top: 160px;
+    height: 34px;
+    width: 60px;
+    display:inline-block;
+}
+
+.switch input{
+    display: none;
+}
+.slider{
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(255, 116, 9) ;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px ;
+    transition: 0.4s;
+
+}
+.slider:before{
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    top: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+
+}
+input:checked + .slider{
+    background: rgb(29, 2, 2);
+}
+
+input:checked + .slider:before{
+    transform:translateX(26px);
+
+}
+
+input:checked + .slider i{
+    opacity: 1;
+}
+
+/*all links*/
+a{
+       text-decoration: none;
+       color: #a3a2a2;
+}
+    /*HEADER*/
+        header{
+         height:100vh;
+         left: 0;
+         background-image:url('images/background\ .png');
+         background-size:cover;
+         background-position: 100% 80%;
+        }
+
+        /*NAVS */
+        .nav{
+           height:fit-content;
+           background-color:  transparent;
+           width:fit-content;
+           float: right;
+           margin: 10px;
+           padding: 10px;
+           display: flex;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+          
+  /* NAV LINKS*/
+        .nav a{
+            margin-left: 35px;
+            font-size: x-large;
+        }
+  /*NAV LINKS ON HOVER  */
+        button:hover{
+          opacity: 0.3;
+                 }
+   
+        .nav a:hover{
+            color: rgb(143, 65, 5);
+            text-decoration: none;
+        }
+
+  /*Icon size*/
+        .fa{
+            font-size: xx-large;
+            font-weight: bold;
+           
+        }
+
+      
+/* header_title */
+.header_title {
+    margin-top: 10vh;
+    text-align: justify;
+    color: rgb(153, 69, 4);
+    padding: 5px;
+    position: absolute;
+    top: 24%;
+    left: 20%;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: slideInOut 7s ease-in-out infinite;
+}
+
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    60% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/*cv container*/
+.cv_container{
+    position: absolute;
+    top: 65%;
+    left: 32%;
+}
+
+/*cv title and for the logo title*/
+.cv_title{
+    text-shadow: 1px 1px 0 rgb(158, 71, 4),2px 2px 0 #939394;  
+  /* -webkit-text-stroke:0.5px maroon ; */
+    color:rgb(225, 116, 9);
+    font-family: Arial, sans-serif; 
+    font-style: oblique;
+    font-size: x-large;
+   }
+
+  
+/*nav-btn and logo container*/
+.logo-container{
+     padding:20px ;
+     width: fit-content;
+    
+}
+/*logo and text*/
+.logo{
+    width: fit-content;
+   
+}
+
+.logo img{
+    width:100px;
+     height:auto;
+     animation: rotate_logo  5s ease-in-out 2s infinite; /*shorthand property*/
+}
+@keyframes rotate_logo{
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+/*animation for my title name*/
+.water-effect{
+    width: 85%;
+    
+}
+.water-effect h1{
+    line-height: 50px;
+    color: #7a6907;
+    -webkit-text-stroke: 1px rgb(224, 101, 7) ;
+    -webkit-background-clip: text;
+    background-position:70% 100%;
+    animation: myheading  3s alternate infinite;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:55px;
+  
+
+}
+
+@keyframes myheading{
+    100%{
+    background-position:1000px 0 ;
+}
+   }
+.marquee {
+    direction:top;
+    scroll-amount:9;
+    color:rgb(225, 116, 9);
+    font-size: 25px;
+    padding-top: 60vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+     #skill_img{
+        margin-top: 30px;
+        width: 100%;
+        border-radius: 20px;
+    
+       }
+    
+      /*ASIDE */
+            aside{
+            width: 15vh;
+            background-color: black;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            
+            }
+    
+              /* MAIN*/
+        main{
+            background-color:transparent;
+            height:fit-content;
+            padding-top: 5px;
+            text-align: center;
+        }
+    
+          /* SECTIONS*/
+        section{
+            background-color:#050505d7;
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+           margin:2px auto;
+           
+        }
+    
+        section h2{
+            color:  rgb(211, 180, 5);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    
+    
+          /* FIGURES*/
+        figure{
+            
+            background-color: rgb(2, 2, 2);
+            width:20%;
+            flex: 1;
+            margin: 4px;
+            border-radius: 25px;
+            color: #969393;
+            padding: 10px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+    
+        /*profile-picture and animation*/
+        .profile-picture{
+            width: 60%;
+            height:80vh;
+            margin: auto 23% ;
+            box-shadow:  -7px 10px 5px 2px #7a6907 ;
+            border-radius: 50%;
+            background-image: url(images/manu.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size:100% 100%;
+        animation: home-animation 15s  3s infinite normal;/*animation shorthand property: 
+           name,duration,timing-function,delay,iteration-count,direction;*/
+        }
+           
+        @keyframes  home-animation {
+              0%{  background-image: url(images/manu.png);}
+              30%  {background-image:url(images/manu2.png);}
+              50%  {background-image:url(images/manu.png);}
+              80%  {background-image:url(images/manu2.png);}
+              100%  {background-image:url(images/manu.png);}
+              
+            }
+        #intro {
+            color: #7a6907;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+        
+        /*type writer color*/
+        #animated-text{
+            color:  rgb(122, 62, 16);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        hr {background-color:rgb(134, 132, 132) ;}
+
+    
+        /*MY SLIDES PICTURE*/
+        .myslide img{
+            width: 40%;
+            height:20vh;
+            margin:  2% 30%;
+        }
+/*details*/
+details{
+    flex: 1;
+    border-radius: 25px;
+    margin:5px;
+    }
+    
+    /*summary of content when open*/
+    details[open] summary{
+        background-color: #7a6907;
+        color:rgb(2, 2, 2);
+        box-shadow: none;
+        border: none;
+    }
+    /*summary of content*/
+     summary{
+        box-shadow: 2px 2px 3px 2px  #7a6907 ;
+        background-color:rgb(7, 0, 0);
+        color: #a3a2a2;
+        font-weight:bold ;
+        padding: 5px;
+        border-radius: 25px;
+        margin: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+     }
+    
+    
+     /* #remove marker
+    summary::marker{
+        content: "";
+    }
+    */
+    
+    /*content to be displayed*/
+    .contents{
+        font-size:medium;
+        color:#7a6907;
+       padding: 5px; 
+       text-align: justify;
+       border: 1px solid #a3a2a2; 
+       border-radius: 20px; 
+        
+    }
+    .client-img{
+        height: 150px;
+        width: 150px;
+        float: left;
+        border-radius: 50%;
+        animation: rotate_client  6s ease-in-out 2s infinite; /*shorthand property*/
+       
+      }
+      @keyframes rotate_client {
+        0%{ transform:rotateY(0deg)}
+        100%{transform:rotateY(360deg);}
+      }
+       /*PROJECT SECTION OR PAGE*/
+  .project_header ,.contact_header{
+    height: 40vh;
+      }
+    
+      #project{
+        background-color:rgb( 2, 2, 2);
+        border: 0.5px solid #7a6907;
+        padding: 0;
+      }
+    
+      #project img {
+        width: 100%;
+        display: block;
+        border-radius: 25px 25px 25px 25px;
+    }
+    
+    #project h3 {
+        margin-top: 0;
+        color:rgb(211, 180, 5);
+    }
+    #project p {
+        margin-bottom: 10px;
+    }
+    #project a {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color:rgb(2, 2, 2);
+        color: #a3a2a2;
+        text-decoration: none;
+        border-radius: 3px;
+        margin: 5px;
+    }
+    /*contact icon*/
+.contact{
+    background:radial-gradient(circle, rgb(2, 2, 2) 70%, #7a6907);
+}
+
+.fa-whatsapp,.fa-facebook,.fa-envelope{
+padding: 5px 10px;
+border: 20px;
+font-size: 20px;
+width: 35vh;
+}
+
+.fa-whatsapp{
+    color: #fff;
+    background-color: green;
+    }
+
+ .fa-facebook{
+    color: #fff;
+    background-color: rgb(24, 54, 205);
+
+ } 
+ 
+ .fa-envelope{
+    width: 35vh;
+    font-size: 17px;
+    color: #fff;
+ background-image: linear-gradient(to right,rgb(255, 63, 223), rgb(63, 165, 255), red, rgb(255, 136, 0),green );
+ }
+  /* FOOTER*/
+  footer{
+    
+    background-image: linear-gradient(to bottom, #7a6907 , rgb( 2, 2, 2) 50% );
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    top:1px;
+    padding:  30px ;
+    
+   }
+
+   /*contact website*/
+   .contact_header{
+    height: 50vh;
+   }
+
+   /*dark mode styles*/
+   body.dark-mode section{
+    background-color: rgb(13, 4, 88);
+   }
+   body.dark-mode figure{
+    background-color:rgb(172, 113, 5);
+   }
+   body.dark-mode figure p{
+    color:rgb(255, 255, 255);
+   }
+   body.dark-mode details p{
+    color:rgb(255, 255, 255);
+   }

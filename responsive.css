@@ -1,0 +1,188 @@
+
+    /*media queries  with breakpoints*/
+
+    /* Extra small devices like phones below 576px  */
+    @media screen and (max-width:575.98px) {
+    
+
+        /*header_title*/
+.header_title{
+    top: 30%;
+    left:1%;
+    text-align:center;
+    
+    }
+
+        /*NAV */
+         .nav{
+            width:40%;
+            flex-direction:column;
+            visibility: hidden;
+            left:0;
+            position: absolute;
+            padding-top:10%;
+            background-color:  rgba(0, 0, 0, 0.699);
+            z-index:1;
+                 }
+ 
+           /*NAV BUTTON  */
+             #nav-btn{
+                 z-index: 1;
+                 position: absolute;
+                     }
+ 
+               .nav a{
+            
+             margin:10% auto;
+                     }
+ 
+                     .logo-container{  
+                        width:100%         
+                           }
+
+                     /*logo*/
+                     .logo{
+                        float: right;
+                        }
+
+         /* SECTION*/
+         section{
+             height: fit-content;
+             padding: 2px;
+             width: 100%;
+ 
+         }
+ 
+         /* FIGURE*/
+             figure{
+                 flex: 100%;
+                 }
+              
+             details{
+               flex:100%; 
+                             
+             }
+
+    
+
+             /*MY SLIDES PICTURE*/
+    .myslide img{
+               height:auto;
+          }
+    
+   /*animation for my title name*/
+
+.water-effect h1{
+    line-height: 50px;
+    -webkit-text-stroke: 1px rgb(165, 127, 1);
+     font-size:xx-large;
+
+}
+ 
+#client-box h4,#client_position{
+    font-size:medium ;
+    margin-top: 30%;
+}
+
+.client-img{
+    width: 50%;
+    height: auto;
+}
+
+    /*profile-picture and animation*/
+    .profile-picture{
+        width: 80%;
+        height:60vh;
+        margin: auto 20px ;
+    }
+
+      /*type writer color*/
+      #animated-text{
+            font-size: larger;
+    }
+    .marquee{
+        padding-top: 75vh;
+    }
+
+
+}
+      /* small devices (landscape  phones,576 and up to)  */
+   /*  @media screen and (min-width:576px)and (max-width:767.98px) {  */
+        @media  screen and (576px <= width <= 767.98px){  
+
+        .header_title{
+            top: 30%;
+            left:1%;
+            text-align:center;
+         
+            }
+         .nav{
+            width:30%;
+            flex-direction:column;
+            visibility: hidden;
+            left:0;
+            position: absolute;
+            padding-top: 10%;
+            background:rgba(0, 0, 0, 0.685);
+            z-index:1;
+           
+
+             }
+ 
+           /*NAV BUTTON  */
+             #nav-btn{
+                 z-index: 1;
+                 position: absolute;
+                     }
+ 
+               .nav a{
+            z-index: 1;
+             margin:10% auto;
+                     }
+
+                     
+                     .logo-container{  
+                        width:100%         
+                           }
+
+                     /*logo*/
+                     .logo{
+                        float: right;
+                        }
+
+                        
+         /* FIGURE*/
+             figure{
+                flex: 100%;
+                }
+             
+
+                details{
+                    flex-basis: calc(33.33% - 1px);
+                }
+            .marquee{
+                padding-top: 70vh;
+            }
+
+
+     }
+          /*Medium devices (tablets ) old way   */           
+    /* @media screen and (min-width:768px)and (max-width:991.98px) {*/
+        /*new way*/
+     @media  screen and( 768px <= width <= 991.98px) {
+
+        .fa-envelope{
+            width: 30vh;
+        }
+        
+    }
+ 
+     
+ 
+      /*Extra Devices large destops   */
+     @media screen and (min-width:1200px) {
+ 
+     }
+         
+     
+ 
